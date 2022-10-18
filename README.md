@@ -16,6 +16,7 @@
 1. 下载OcrLib，[下载地址](https://github.com/RapidAI/RapidOcrNcnn/releases)
 
 * 文件名：平台-clib-.7z，
+* 注意：如果想使用GPU版，请先安装vulkan，参考[编译说明](https://github.com/RapidAI/RapidOcrNcnn/blob/main/BUILD.md)
 * 把压缩包解压到OcrLib-CPU和OcrLib-GPU目录，两者目录结构相同，windows平台需要注意目录层次，解压后目录结构如下
 
 ```
