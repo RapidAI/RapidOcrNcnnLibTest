@@ -18,9 +18,9 @@ add_definitions(-DUNICODE -D_UNICODE)
 
 # import OcrLib
 if (OCR_VULKAN STREQUAL "GPU")
-    include(${CMAKE_CURRENT_SOURCE_DIR}/OcrLib-GPU/OcrLibWrapper.cmake)
+    include(${CMAKE_CURRENT_SOURCE_DIR}/OcrLib/OcrLibWrapper-GPU.cmake)
 else ()
-    include(${CMAKE_CURRENT_SOURCE_DIR}/OcrLib-CPU/OcrLibWrapper.cmake)
+    include(${CMAKE_CURRENT_SOURCE_DIR}/OcrLib/OcrLibWrapper-CPU.cmake)
 endif ()
 find_package(OcrLib REQUIRED)
 if (OcrLib_FOUND)
